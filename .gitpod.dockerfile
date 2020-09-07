@@ -17,11 +17,11 @@ RUN chown gitpod:gitpod /var/run/apache2 /var/lock/apache2 /var/run/mysqld
 
 RUN addgroup gitpod www-data
 
-# RUN curl -0 https://files.phpmyadmin.net/phpMyAdmin/4.9.1/phpMyAdmin-4.9.1-english.tar.gz
-# RUN mkdir /workspace/wordpress-hello/phpmyadmin && sudo mv wp-cli.phar /workspace/wordpress-hello/phpmyadmin/
-# RUN tar xvzf /workspace/wordpress-hello/phpmyadmin/phpMyAdmin-4.9.1-english.tar.gz
+# RUN wget https://files.phpmyadmin.net/phpMyAdmin/4.9.1/phpMyAdmin-4.9.1-english.tar.gz
+# RUN tar xvzf /workspace/wordpress-hello/phpMyAdmin-4.9.1-english.tar.gz
+# RUN mv phpMyAdmin-4.9.1-english phpmyadmin
 
 
-RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-RUN chmod +x wp-cli.phar
-RUN sudo mv wp-cli.phar /usr/local/bin/wp
+# RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+# RUN chmod +x wp-cli.phar
+# RUN sudo mv wp-cli.phar /usr/local/bin/wp
